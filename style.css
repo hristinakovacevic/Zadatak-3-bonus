@@ -58,13 +58,14 @@ color: #FFFFFF;
 
 }
 
+
 section{
     width:45%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     z-index: 3;
-    height: 5vh;
+    
 }
 .purple{
     background-color: hsl(248, 32%, 49%);
@@ -75,8 +76,8 @@ section{
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
 }
 .purple p{
-color: white;
-font-size: 1.5em;
+    color: white;
+    font-size: 1.5em;
 }
 .purple span{
     font-weight: 700;
@@ -90,7 +91,10 @@ form{
     padding: 5%;
 }
 form div{
-margin-bottom: 5%;
+    margin-bottom: 5%;
+}
+.position{
+    position: relative;
 }
 input
 {
@@ -99,29 +103,36 @@ input
     font-weight: 600;
     padding: 4%;
     border: 1px solid hsl(246, 25%, 77%);
-    position: relative;
+    
     font-size: 1em;
     font-family: 'Poppins', sans-serif; ;
 }
-.active input{
-    display: none;
-    border: 2px solid hsl(0, 100%, 74%);
-} 
+
 .err{
-    position: absolute;
-    margin-left: -2%;
-    margin-top: 1%;
+    
     display: none;
+    position: absolute;
+    margin-left: 28vw;
+    margin-top: -4vw;
     
 }
-  .message{
-display: none;
-color: rgba(255, 121, 121, 1);
-text-align: end;
+
+
+  .msg-first-name,
+  .msg-last-name,
+  .msg-email,
+  .msg-password{
+
+    display:none;
+    color: rgba(255, 121, 121, 1);
+    text-align: end;
+}
+.active {
+    display: block;
 }
 button{
-background-color:hsl(154, 59%, 51%) ;
-width: 100%;
+    background-color:hsl(154, 59%, 51%) ;
+    width: 100%;
     padding: 4%;
     border: none;
     box-shadow: inset 7px 0px 0px rgb(0 0 0 / 9%);
@@ -153,17 +164,25 @@ padding-bottom: 3%;
         background: url('./images/bg-intro-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 00vh;
     }
     h1{
-        font-size: 2em;
+        font-size: 1.5em;
+        padding-top: 4%;
     }
+    
     section{
         text-align: center;
         width: 100%;
 
     }
     .container{
+        height: 100vh;
         flex-direction: column;
+    }
+    .err{
+      display: none;
+    margin-top: -38px;
+    right: 81px;
     }
 }
